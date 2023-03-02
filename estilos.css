@@ -42,3 +42,42 @@ nav a:link {color: blue}
 nav a:visited {color: gray}
 nav a:hover{color: orange}
 nav a:active {color: red}
+
+
+
+/* Configuração dos ícones do menu*/
+nav a:before {
+  font-family: 'FontAwesome';
+  content: "🏡";
+  /* Ícone de casa */
+}
+
+nav a[href='multimedia.html']:before {
+  font-family: 'FontAwesome';
+  content: "📷";
+  /* Ícone de câmera */
+}
+
+nav a[href='local.html']:before {
+  font-family: 'FontAwesome';
+  content: "🗺️";
+  /* Ícone de mapa */
+}
+
+nav a[href='info.html']:before {
+  font-family: 'FontAwesome';
+  content: "📰";
+  /* Ícone de câmera */
+}
+
+nav a[href='quizz.html']:before {
+  font-family: 'FontAwesome';
+  content: "❓";
+  /* Ícone de mapa */
+}
+
+nav a[href='html5-css.html']:before {
+  font-family: 'FontAwesome';
+  content: "📓";
+  /* Ícone de mapa */
+}
