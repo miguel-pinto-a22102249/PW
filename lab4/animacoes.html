@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Miguel Pinto">
+    <meta name="description" content="Miguel Pinto">
+    <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="animacoes">
+    <header>
+        <nav>
+            <div class="menu">
+                <button class="submenu">
+                    Menu
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown">
+                    <a href="index.html"><b>Index</b></a>
+                    <a href="video.html"><b>Video</b></a>
+                    <a href="imagemResponsiva.html"><b>Imagem Responsiva</b></a>
+                    <a href="animacoes.html"><b>Animações</b></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img src="images/deisi.svg" width="1000px" id="imgTransformacao" />
+
+    <div id="transicao">Transição</div>
+
+    <div id="keyFrame">Key Frame</div>
+
+    <img src="images/lisboa2_grande.jpg" id="imagemEfeito"> <br><br>
+
+
+    <svg width="200" height="200">
+        <circle cx="50" cy="50" r="30" fill="#2196F3">
+          <animate attributeName="cx" values="50;150;50" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="cy" values="50;150;150;50" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="r" values="30;15;30" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <rect x="75" y="75" width="50" height="50" fill="#FFC107">
+          <animate attributeName="width" from="50" to="75" dur="1s" repeatCount="indefinite" />
+          <animate attributeName="height" from="50" to="75" dur="1s" repeatCount="indefinite" />
+          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <polygon points="125,75 175,100 125,125" fill="#4CAF50">
+          <animate attributeName="points" values="125,75 125,100 175,100 125,125 125,100 75,100" dur="2s" repeatCount="indefinite" />
+        </polygon>
+      </svg>
+
+
+      <div class="quadra1">
+        <p class="verso1">Lisboa é como um sonho</p><br>
+        <p class="verso2">Que se acorda em plena luz do dia</p><br>
+    </div>
+    <div class="quadra2">
+        <p class="verso1">Com suas ruas estreitas</p>
+        <p class="verso2">E suas casas coloridas em harmonia</p><br><br>
+    </div>
+    <div class="quadra3">
+        <p class="verso1">O Tejo corre lá embaixo</p>
+        <p class="verso2">Refletindo o sol que nasce atrás do morro</p>
+    </div>
+    <div class="quadra4">
+        <p class="verso1">Lisboa é uma cidade antiga</p>
+        <p class="verso2">Que nunca perde seu brilho de ouro</p>
+    </div>
+</body>
+
+</html>

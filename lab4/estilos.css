@@ -1,0 +1,329 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template: "header header header"
+        "main   main  texto"
+        "footer footer footer";
+
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index1 {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template: "header header header"
+        "main   main  texto"
+        "footer footer footer";
+
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+.index2 {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template: "footer footer footer"
+        "main   main  texto"
+        "header header header";
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+.index3 {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template: "footer footer footer"
+        "header header header"
+        "main   main  texto";
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+.index4 {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template:
+        "header header header"
+        "footer footer footer"
+        "main   main  texto";
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+.index5 {
+    background-image: url("images/lisboaLab4.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+    background-position-y: bottom;
+    display: grid;
+    grid-template:
+        "header header header"
+        "texto  main   main"
+        "footer footer footer";
+    grid-template-rows: 10% 1fr 10%;
+    background-attachment: fixed;
+    /* centrar e escalar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.texto {
+    grid-area: texto;
+    color: rgb(30, 20, 167);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    display: inline;
+    text-align: right;
+    margin: 0;
+}
+
+footer {
+    grid-area: footer;
+    position: sticky;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#video {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-width: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.menuVideo {
+    position: fixed;
+    z-index: 9999;
+}
+
+#imgTransformacao:hover {
+    transform: rotate(20deg);
+}
+
+#transicao {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: transform 2s;
+}
+
+#transicao:hover {
+    transform: skew(20deg, 10deg);
+}
+
+@keyframes keyFrameEx {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+#keyFrame {
+    width: 100px;
+    height: 100px;
+    background: rgb(43, 25, 197);
+    animation-name: keyFrameEx;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 10px 0;
+}
+
+#imagemEfeito {
+    border-radius: 20px;
+}
+
+#imagemEfeito:hover {
+    transform: scaleY(-1);
+}
+
+#animacoes {
+    display: block;
+    padding: 50px;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu {
+    float: left;
+    overflow: hidden;
+}
+
+.menu .submenu {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}
+
+.quadra1 {
+    background-color: #ffe6cc;
+    border: 2px solid #ffcc99;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.quadra2 {
+    background-color: #cce6ff;
+    border: 2px solid #99ccff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.quadra3 {
+    background-color: #d9ffb3;
+    border: 2px solid #b3ff66;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.quadra4 {
+    background-color: #ffcce6;
+    border: 2px solid #ff99cc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.verso1 {
+    font-weight: bold;
+}
+
+.verso2 {
+    font-style: italic;
+}
+
+.quadra1:hover, .quadra2:hover, .quadra3:hover, .quadra4:hover {
+    background-color: #ffffcc;
+    border-color: #ffff99;
+}
+
+.verso2:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .quadra1, .quadra2, .quadra3, .quadra4 {
+        font-size: 14px;
+    }
+}
